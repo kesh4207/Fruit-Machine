@@ -10,9 +10,13 @@ let fruitArray=[apple,pear,avocado,pineapple,watermelon,raspberry];
 
 function displayFruits()
 {
-    let slot1 = randomImg('slot1');
-    let slot2 = randomImg('slot2');
-    let slot3 = randomImg('slot3');
+    let slot1 = moveSlots('slot1');
+    console.log('slot1');
+    let slot2 = moveSlots('slot2');
+    console.log('slot2');
+    let slot3 = moveSlots('slot3');
+    console.log('slot3');
+    //console.log("We're spinning!")
     let scoreStatus= document.getElementById('status');
     let scoreBoard= score(slot1,slot2,slot3);
     if (scoreBoard) scoreStatus.innerText='Status: Win';
@@ -20,6 +24,35 @@ function displayFruits()
     
     return false;
 
+}
+
+function moveSlots(slotNum)
+{
+    let arrInd;
+    let counter = 0;
+    let moving = setInterval( () => {
+        
+        arrInd = randomImg(slotNum);
+        
+        if (counter === 2)
+        {
+            clearInterval(moving);
+            console.log(arrInd + " " + slotNum);
+            return arrInd;
+            
+            
+        }
+        counter++
+        
+    
+    },3000);
+    
+    console.log('final is ' + moving);
+    console.log('final is ' + arrInd);
+    
+    return moving;
+
+    
 }
 
 function randomImg(slotNum)
@@ -32,6 +65,7 @@ function randomImg(slotNum)
 
     
 }
+
 
 function score(arrInd1, arrInd2, arrInd3)
 {
