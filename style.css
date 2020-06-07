@@ -7,7 +7,17 @@
 {  
     float: left;
     padding: 5px;
+    overflow: hidden;
+    
+    
 }
+
+.blur
+{
+  filter: blur(2px);
+}
+
+
 .row::after {
     content: "";
     clear: both;
@@ -32,16 +42,47 @@
       padding: 27px;
       
   }
+ 
+  
 
   div img{
-    
+
+      
       height: 135px;
       width: 160px; 
       border-radius: 8px;
       background-color: rgba(230, 218, 218, 0.863);
-
+      position: relative;
   }
+
+      
+      
+
+.moveSlot.move {
+  
+  animation-name: move;
+  animation-duration:  0.6s ;
+ 
+  
+  
+
+}
+
+
+
+/* css animations with keyframes will by default only run once. hence I reset the animation by removing the element name*/
+.moveSlot {
+  
+  animation-name: none;
+}
+@keyframes move {
+  from {top: 0px; filter: blur(2px)}
+  to {top: -400px; filter: blur(2px)}
+}
+
+
   .imgRow{
+    
     background-color: white;
     margin: 10px;
     border-radius: 8px;

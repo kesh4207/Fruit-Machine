@@ -40,6 +40,7 @@ function displayFruits(){
    //setInterval( function() { funca(10,3); }, 500 );
     console.log('spincount is ' , slot.spinCount);
     slot.spinCount = slot.spinCount + Math.floor(Math.random() * fruitArray.length);
+    
 
     let spin3 = () => 
     {
@@ -59,6 +60,7 @@ function displayFruits(){
       let counter = slot.spinCount; 
       console.log('counter: ', counter);
       console.log('last: ' , slot.lastInd);
+      
       slot.lastInd ++;
       
    
@@ -69,43 +71,102 @@ function displayFruits(){
     
  
         if ( slot.lastInd === counter) {
+           //show(slot.slotNum,arrInd);
+           
            slot.lastInd = arrInd;
            console.log(arrInd);
-           showImg(slot.slotNum,arrInd);
+           show(slot.slotNum,arrInd); 
+           
+          
+
+           
            
            clearInterval(spin);
           
        }
        
-    
-      showImg(slot.slotNum,arrInd); 
+       
+      showImg1(slot.slotNum,arrInd); 
      
   }
-
+  
  
     return false;
 }
 
 
-  function showImg(slotNum, arrInd)
+  function showImg1(slotNum, arrInd)
 {
    
   console.log(arrInd);
   let slotCell = document.getElementById(slotNum);
   slotCell= slotCell.querySelector('img');
-  $(slotCell).attr('src',fruitArray[arrInd]);
+  //slotCell.style.filter ='blur(2px)';
+ 
+  slotCell.classList.remove('move');
+  slotCell.offsetHeight;
+  // browser needs to recognise animation has been reset by  a page repaint
+  $(slotCell).addClass('move');
+
   
   
+  
+  
+  
+  
+  // var elem = slotCell;   
+  // var pos = 0;
+  // var id = setInterval(frame, 3);
+  // function frame() {
+  //   if (pos == 100) {
+  //     elem.style.top = 0; 
+  //     clearInterval(id);
+  //   } else {
+  //     $(slotCell).attr('src',fruitArray[arrInd]);
+  //     pos++;
+  //     elem.style.top = pos + "px"; 
+      
+  //   }
+  // }
+ 
+    $(slotCell).attr('src',fruitArray[arrInd]);
+
 
 }
 
+function show(slotNum, arrInd)
+{
+   
+  console.log(arrInd);
+  let slotCell = document.getElementById(slotNum);
+  slotCell= slotCell.querySelector('img');
+  
+  
+  $(slotCell).attr('src',fruitArray[arrInd]);
+ // slotCell.classList.remove('move');
+  //slotCell.offsetHeight;
+  
+ 
+  slotCell.style.filter ='blur(0)';
+  
+  
+  
+}
+
+/* problem with CSS animations keyframes by default only run ONCE hence the animation needs to be reset  */
+
+
+
+
 function startingFunction(slot) {
     slot.lastInd = slot.startInd;
-    showImg(slot.slotNum,slot.lastInd);
+    showImg1(slot.slotNum,slot.lastInd);
     
 
        
 }
+
+
 
 
  
