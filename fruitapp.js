@@ -50,7 +50,7 @@ function displayFruits() {
 			}, 1000);
 		}
 	}
-	setTimeout(win, 6200);
+	setTimeout(win, 6200); // get final index of image after spining to check if 'loss' or 'win'
 
 	function spining() {
 		if (slot.lastInd === null) startingFunction(slot); // mean it would be a first spin
@@ -59,7 +59,7 @@ function displayFruits() {
 		slot.lastInd++;
 		let arrInd = slot.lastInd % fruitArray.length; // cycling through the array to mimic a slot machine
 		if (slot.lastInd === counter) {
-			//show(slot.slotNum,arrInd);
+			
 			slot.lastInd = arrInd;
 			show(slot.slotNum, arrInd);
 			clearInterval(spin);
@@ -74,7 +74,7 @@ function displayFruits() {
 		slot2.lastInd++;
 		let arrInd = slot2.lastInd % fruitArray.length; // cycling through the array to mimic a slot machine
 		if (slot2.lastInd === counter) {
-			//show(slot.slotNum,arrInd);
+			
 			slot2.lastInd = arrInd;
 			show(slot2.slotNum, arrInd);
 			clearInterval(spin2);
@@ -89,7 +89,7 @@ function displayFruits() {
 		slot3.lastInd++;
 		let arrInd = slot3.lastInd % fruitArray.length; // cycling through the array to mimic a slot machine
 		if (slot3.lastInd === counter) {
-			//show(slot.slotNum,arrInd);
+			
 			slot3.lastInd = arrInd;
 			show(slot3.slotNum, arrInd);
 			clearInterval(spin3);
