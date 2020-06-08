@@ -136,6 +136,11 @@ function init(slotNum, randomInd)
   return randomInd;
 }
 
+
+
+
+
+
 function nextPart(slotNum ,randomInd)
 {
 

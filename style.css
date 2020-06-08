@@ -1,8 +1,17 @@
+@font-face
+{
+  font-family: myFont;
+  src: url('font2.ttf');
+}
+
 *{
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: myFont;
+    
 
 }
+
+
 .column
 {  
     width: 169px;
@@ -12,6 +21,19 @@
     overflow: hidden;
     
     
+}
+
+#box
+{
+  
+  border-radius: 8px;
+  position: relative;
+  top:100px;
+  left: 100px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/04/10/13/slot-machine-game-1797310_960_720.png);
+  
+  
+  box-shadow: 10px 10px grey;
 }
 
 
@@ -31,6 +53,7 @@
     font-size: 40px;
     color: white;
     background-color: grey;
+    border-radius: 8px;
  }
 
   #box
