@@ -5,6 +5,8 @@
 }
 .column
 {  
+    width: 169px;
+    height: 145px;
     float: left;
     padding: 5px;
     overflow: hidden;
@@ -12,10 +14,6 @@
     
 }
 
-.blur
-{
-  filter: blur(2px);
-}
 
 
 .row::after {
@@ -56,10 +54,10 @@
   }
 
       
-      
-
+ 
 .moveSlot.move {
-  
+
+  position: relative;
   animation-name: move;
   animation-duration:  0.6s ;
  
