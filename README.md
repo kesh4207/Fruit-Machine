@@ -1,9 +1,9 @@
 # Fruit-Machine
-![alt text]('spin photo.png') 
+![alt text](spin photo.png "img1") 
 
 ## The process
 
-Link to my [Trello]:('https://trello.com/b/EVa1CLxd/fruit-machine')  for further explanation on the process
+Link to my [Trello](https://trello.com/b/EVa1CLxd/fruit-machine)  for further explanation on the process
 So I started of fairly simple by making my program display 3 randoms images and deceipher whether all the images match. i.e. if the 3 images match that would be a win and if not - that would be a loss. I did this by create an image array of src's and randomly selecting  and assigning these src to img tag elements. 
 
 
