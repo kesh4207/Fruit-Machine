@@ -1,6 +1,13 @@
 # Fruit-Machine
 <a href="https://ibb.co/wL61YzN"><img src="https://i.ibb.co/0XJ3QGj/spin-photo.png" alt="spin-photo" border="0"></a>
 
+You can run this project by cloning and using your git gui to  clone a repositry and open up this file in visual studio.
+ 
+ You use this by clicking spin and after spinning, the browser shows 3 random images and deceipher if its a loss or win.
+ I done this project to show all my JavaScript, CSS and HTML knowledge from the Tech talent accelerator course- This is a 6 week course where I learnt about these programs and how to use them from no prior learning.
+
+ This project shows of good examples of reusable code as I use the animation (init) function to move the objects up and keep repeating this for each slot spin.
+
 ## The process
 
 
@@ -16,7 +23,7 @@ To add the spinning effect I used the css key frame animation and simply made ea
 
 Adding on to this I would create a betting option for the user, so they start of with an inital amount and loose/gain money depending on their score status. Once, they have loss all their money, I want to give them an option to reset the game. I also want to add more effects for wining i.e. confetti to improve user experience.
 
-This was done as part of the TTA course.
+
 
 
 
