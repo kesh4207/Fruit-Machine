@@ -7,8 +7,16 @@
 *{
     box-sizing: border-box;
     font-family: myFont;
+    text-shadow: 2px 2px 4px #000000;
     
-
+    
+    
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+  color: rgb(252, 4, 86);
+  
 }
 
 
@@ -25,16 +33,20 @@
 
 #box
 {
-  
+ 
   border-radius: 8px;
-  position: relative;
-  top:100px;
-  left: 100px;
+  width: 650px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url(https://cdn.pixabay.com/photo/2016/11/04/10/13/slot-machine-game-1797310_960_720.png);
+  box-shadow: 0 0 20px -2px;
   
   
   
-  box-shadow: 10px 10px grey;
+  
+
 }
 
 
@@ -55,11 +67,14 @@
     color: white;
     background-color: grey;
     border-radius: 8px;
+    box-shadow: 0 0 20px -2px black;
  }
+
+ 
 
   #box
   {
-    background-color: hsl(337, 62%, 72%);
+    
       width: 620px;
       padding: 27px;
       
@@ -97,6 +112,7 @@
 .moveSlot {
   
   animation-name: none;
+  
 }
 @keyframes move {
   from {top: 0px; filter: blur(2px)}
@@ -111,6 +127,7 @@
     border-radius: 8px;
     width: 513px;
     margin:29px;
+    box-shadow: 0 0 20px -2px;
     
   }
 
