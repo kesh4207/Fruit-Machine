@@ -52,7 +52,7 @@ function displayFruits(){
 	}
     setTimeout(win, 6200); // get final index of image after spining to check if 'loss' or 'win'
 
-    function spining() {
+    function spining()  { 
 		if (slot.lastInd === null) startingFunction(slot); // mean it would be a first spin
 		// value that the slot is on 
 		//let counter = slot3.spinCount;
