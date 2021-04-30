@@ -1,7 +1,7 @@
 # Fruit-Machine
 <img src="https://i.ibb.co/0XJ3QGj/spin-photo.png" alt="spin-photo" border="0"></a>
 
-![Drag Racing]('.\spin photo.png')
+![Drag Racing]('.\ spin photo.png')
 
 You can run this project by cloning and using your git gui to  clone a repositry and open up this file in visual studio.
  
