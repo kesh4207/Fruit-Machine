@@ -1,6 +1,8 @@
 # Fruit-Machine
 <a href="https://ibb.co/wL61YzN"><img src="https://i.ibb.co/0XJ3QGj/spin-photo.png" alt="spin-photo" border="0"></a>
 
+![Drag Racing](https://i.ibb.co/0XJ3QGj/spin-photo.png)
+
 You can run this project by cloning and using your git gui to  clone a repositry and open up this file in visual studio.
  
  You use this by clicking spin and after spinning, the browser shows 3 random images and deceipher if its a loss or win.
