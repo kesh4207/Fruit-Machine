@@ -1,5 +1,5 @@
 # Fruit-Machine
-<a href="https://ibb.co/wL61YzN"><img src="https://i.ibb.co/0XJ3QGj/spin-photo.png" alt="spin-photo" border="0"></a>
+<img src="https://i.ibb.co/0XJ3QGj/spin-photo.png" alt="spin-photo" border="0"></a>
 
 ![Drag Racing](https://i.ibb.co/0XJ3QGj/spin-photo.png)
 
